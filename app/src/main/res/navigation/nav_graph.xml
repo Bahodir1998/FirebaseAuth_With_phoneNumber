@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firthFragment">
+
+    <fragment
+        android:id="@+id/firthFragment"
+        android:name="com.example.firebaseauth.FirthFragment"
+        android:label="fragment_firth"
+        tools:layout="@layout/fragment_firth" >
+        <action
+            android:id="@+id/action_firthFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.firebaseauth.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.firebaseauth.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+</navigation>

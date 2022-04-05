@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:text="SMS kodni kiriting"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Bir martalik kod  (+998 93) 461-**-**\nraqamiga yuborildi"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="35dp"
+        android:text="SMS kod"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv2"
+        app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+
+    <EditText
+        android:id="@+id/sms_et"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        app:boxStrokeWidth="0dp"
+        android:hint="* * * * * *"
+        android:inputType="numberPassword"
+        android:background="@drawable/edit_text_border"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"/>
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/sms_et"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/edit_text_border"-->
+<!--            android:hint="* * * *"-->
+<!--            android:inputType="numberPassword" />-->
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/sms_et"
+        app:layout_constraintRight_toRightOf="@id/sms_et" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/sms_et"
+        app:layout_constraintTop_toBottomOf="@id/sms_et">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/reload_icon" />
+
+        <TextView
+            android:id="@+id/resend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="Kodni qayta olish"
+            android:textColor="#20D472"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
